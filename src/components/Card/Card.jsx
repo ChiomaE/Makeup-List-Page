@@ -2,10 +2,14 @@ import './card.css'
 import axios from 'axios'
 import exImg from './imageexample.jpg'
 import { useEffect, useState } from 'react'
+import Modal from '../Modal/Modal'
 
 export default function Card() {
     const[product, setProduct] = useState([])
-    
+    //modal state params
+    const[selectedProduct, setSelectedProduct] = useState(null)
+
+       
     useEffect(() => {
         async function fetchData () {
 
@@ -27,6 +31,14 @@ export default function Card() {
         }
     }, [product])
 
+    const handleOpenModal = (product) => {
+        setSelectedProduct(product)
+    }
+
+    const handleCloseModal = () => {
+        setSelectedProduct(null);
+    };
+
     return (
 
         <div className='page-div'>
@@ -41,21 +53,13 @@ export default function Card() {
                             </h4>
                         <h4>{item.price}</h4>
                     </div>
-                    <button className='viewBtn'>Product Details</button>
+                    <button className='viewBtn' onClick={() => handleOpenModal(item)}>Product Details</button>
+                    {selectedProduct && selectedProduct.id === item.id && (
+                    <Modal product={selectedProduct} closeModal={handleCloseModal}/>
+                    )}
                 </div>
             ))}
         </div>
 
-        
-       /*  {/* <div className='Card'>
-            <img className='card-img' src={exImg} />
-            <h4 className='productName'>Maybelline Face Studio Master Hi-Light Light Booster Bronzer
-            </h4>
-            <div className='next-to'>
-                <h4 className='rating'>5.5 Stars</h4>
-                <h4>$15.99</h4>
-            </div>
-            <button className='viewBtn'>View More</button>
-        </div> } */
     )
 }
