@@ -10,7 +10,6 @@ function App() {
       <h1>Maybelline Product Page</h1>
       <div className='card-div'>
       <Card />
-   
       </div>
       
     </div>

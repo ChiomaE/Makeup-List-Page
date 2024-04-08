@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 export default function Card() {
     const[product, setProduct] = useState([])
-
+    
     useEffect(() => {
         async function fetchData () {
 
@@ -27,10 +27,6 @@ export default function Card() {
         }
     }, [product])
 
-
-
-
-
     return (
 
         <div className='page-div'>
@@ -39,10 +35,13 @@ export default function Card() {
                     <img className='card-img' src={item.image_link} />
                     <h4 className='productName'>{item.name}</h4>
                     <div className='next-to'>
-                        <h4 className='rating'>{item.rating}</h4>
+                        <h4 className='rating'>
+                            {/* set rating to print "not rated" if null */}
+                            {item.rating === null ? "Not Rated" : `${item.rating} / 5`} 
+                            </h4>
                         <h4>{item.price}</h4>
                     </div>
-                    <button className='viewBtn'>View More</button>
+                    <button className='viewBtn'>Product Details</button>
                 </div>
             ))}
         </div>
