@@ -11,8 +11,8 @@ export default function Card() {
 
             try {
                 const res = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
-                console.log(res.data);
-                setProduct(res.data.results)
+                /* console.log(res.data); */
+                setProduct(res.data);
             } catch (error) {
                 console.error("error fetching data:", error)
             }
@@ -32,7 +32,23 @@ export default function Card() {
 
 
     return (
-        <div className='Card'>
+
+        <div className='page-div'>
+            {product.map(item => (
+                <div className='Card' key={item.id}>
+                    <img className='card-img' src={item.image_link} />
+                    <h4 className='productName'>{item.name}</h4>
+                    <div className='next-to'>
+                        <h4 className='rating'>{item.rating}</h4>
+                        <h4>{item.price}</h4>
+                    </div>
+                    <button className='viewBtn'>View More</button>
+                </div>
+            ))}
+        </div>
+
+        
+       /*  {/* <div className='Card'>
             <img className='card-img' src={exImg} />
             <h4 className='productName'>Maybelline Face Studio Master Hi-Light Light Booster Bronzer
             </h4>
@@ -41,6 +57,6 @@ export default function Card() {
                 <h4>$15.99</h4>
             </div>
             <button className='viewBtn'>View More</button>
-        </div>
+        </div> } */
     )
 }
