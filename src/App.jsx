@@ -7,18 +7,10 @@ function App() {
 
   return (
     <div>
-      <h1>Makeup Product Page</h1>
+      <h1>Maybelline Product Page</h1>
       <div className='card-div'>
       <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+   
       </div>
       
     </div>
