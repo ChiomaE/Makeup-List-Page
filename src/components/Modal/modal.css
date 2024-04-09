@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 900px;
-    height: 55%;
+    height: 51%;
     background-color: white;
     position: relative;
     transition: 0.2s;
@@ -30,7 +30,7 @@
 
 .item-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     max-width: 500px;
 
@@ -63,6 +63,12 @@
     border: 1.5px solid rgba(0, 0, 0, 0.39);
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.productBtn:hover {
+    text-decoration: underline;
+    
 }
 
 .closeBtn {

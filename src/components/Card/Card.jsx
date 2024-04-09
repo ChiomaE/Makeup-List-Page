@@ -47,13 +47,14 @@ export default function Card() {
                     <img className='card-img' src={item.image_link} />
                     <h4 className='productName'>{item.name}</h4>
                     <div className='next-to'>
-                        <h4 className='rating'>
+                    <h5 className='rating'>{`$${item.price}`}</h5>
+                        <h5 >
                             {/* set rating to print "not rated" if null */}
-                            {item.rating === null ? "Not Rated" : `${item.rating} / 5`} 
-                            </h4>
-                        <h4>{`$${item.price}`}</h4>
+                            {item.rating === null ? "Not Rated" : `Rating: ${item.rating} / 5`} 
+                            </h5>
+                        
                     </div>
-                    <button className='viewBtn' onClick={() => handleOpenModal(item)}>Product Details</button>
+                    <button className='viewBtn' onClick={() => handleOpenModal(item)}>PRODUCT DETAILS</button>
                     {selectedProduct && selectedProduct.id === item.id && (
                     <Modal product={selectedProduct} closeModal={handleCloseModal}/>
                     )}

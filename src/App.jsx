@@ -7,7 +7,10 @@ function App() {
 
   return (
     <div>
-      <h1>Maybelline Product Page</h1>
+      <nav>
+        <h1>Maybelline: Face, Eye, and Lip</h1>
+      </nav>
+      
       <div className='card-div'>
       <Card />
       </div>
