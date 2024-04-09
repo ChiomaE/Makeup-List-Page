@@ -11,8 +11,9 @@ export default function Modal({product, closeModal}) {
                 <div className='item-info'>
                     <h2>{product.name}</h2>
                     <div style={{display: 'flex', justifyContent:'space-evenly'}}>
-                        <h2>{`$${product.price}`}</h2>
                         <h2> {product.rating === null ? "Not Rated" : `${product.rating} / 5`}</h2>
+                        <h2>{`$${product.price}`}</h2>
+                        
                         
                     </div>
                     <div className='colors'>
@@ -22,9 +23,12 @@ export default function Modal({product, closeModal}) {
                         ))}
                         
                     </div>
-                    <p className='description'><strong>Description: </strong>{product.description}</p>
+
+                    <p><strong>Description: </strong>{product.description}</p>
+                    
                     <a href={product.product_link}>
                         <button className='productBtn'>Go to Product Page</button>
+                        {/* Some of the product pages are no longer available & lead to 404 */}
                     </a>
                     
                 </div>

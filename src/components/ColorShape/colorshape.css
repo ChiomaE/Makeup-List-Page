@@ -1,9 +1,9 @@
 .colorShape {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     color: aliceblue;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 28px;
 }
 
 .color-info {

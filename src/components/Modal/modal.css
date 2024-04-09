@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 900px;
-    height: 50%;
+    height: 55%;
     background-color: white;
     position: relative;
     transition: 0.2s;
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
 
 }
 
@@ -40,10 +40,30 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
+   /* overflow: scroll; */
    
     
 }
 
+/* .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    
+} */
+
+.productBtn {
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: larger;
+    background-color: rgba(3, 0, 12, 0.973);
+    border: 1.5px solid rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .closeBtn {
     position: absolute;
@@ -56,6 +76,6 @@
     display: flex;
     align-items: end;
     cursor: pointer;
-    width: 20px;
+    width: 30px;
     padding: 5px;
 }
