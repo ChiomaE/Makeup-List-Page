@@ -1,6 +1,6 @@
-# Makeup Products Showcase
+# Maybelline Products List
 
-This project is a makeup products showcase built with React. It retrieves data from the Makeup API to display products from the Maybelline brand. Each product is displayed as a card, and users can view more details about a product by clicking on the "Product Details" button, which opens a modal displaying additional information about the selected product.
+This project is a Maybelline product list page built with React. It retrieves data from the Makeup API to display products from the Maybelline brand. Each product is displayed as a card, and users can view more details about a product by clicking on the "Product Details" button, which opens a modal displaying additional information about the selected product.
 
 ## Features
 
