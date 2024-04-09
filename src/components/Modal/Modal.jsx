@@ -1,5 +1,6 @@
 import ColorShape from '../ColorShape/ColorShape'
 import './modal.css'
+import { Link } from 'react-router-dom'
 
 export default function Modal({product, closeModal}) {
     return(
@@ -10,8 +11,8 @@ export default function Modal({product, closeModal}) {
                 <div className='item-info'>
                     <h2>{product.name}</h2>
                     <div style={{display: 'flex', justifyContent:'space-evenly'}}>
-                        <h3>{`$${product.price}`}</h3>
-                        <h4> {product.rating === null ? "Not Rated" : `${product.rating} / 5`}</h4>
+                        <h2>{`$${product.price}`}</h2>
+                        <h2> {product.rating === null ? "Not Rated" : `${product.rating} / 5`}</h2>
                         
                     </div>
                     <div className='colors'>
@@ -21,9 +22,11 @@ export default function Modal({product, closeModal}) {
                         ))}
                         
                     </div>
-                    <p className='description'><strong>Description: </strong>
-                        {product.description}</p>
-                    <button>Go to Product Page</button>
+                    <p className='description'><strong>Description: </strong>{product.description}</p>
+                    <a href={product.product_link}>
+                        <button className='productBtn'>Go to Product Page</button>
+                    </a>
+                    
                 </div>
                     
             </div>
