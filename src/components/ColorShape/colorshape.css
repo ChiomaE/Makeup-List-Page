@@ -1,0 +1,7 @@
+.colorShape {
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+    border: 1px solid black;
+    border-radius: 20px;
+}
