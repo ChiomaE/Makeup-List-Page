@@ -14,7 +14,7 @@ This project is a makeup products showcase built with React. It retrieves data f
 1. Clone the repository:
 ```bash
 
-git clone <https://github.com/ChiomaE/Makeup-List-Page>
+git clone https://github.com/ChiomaE/Makeup-List-Page
 
 ```
 
