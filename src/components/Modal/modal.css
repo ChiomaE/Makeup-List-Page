@@ -15,7 +15,7 @@
 .Modal {
     display: flex;
     justify-content: space-evenly;
-    width: 850px;
+    width: 900px;
     height: 50%;
     background-color: white;
     position: relative;
@@ -32,12 +32,14 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 400px;
 
 }
 
 .colors {
-   display: inline-flex;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
     
 }

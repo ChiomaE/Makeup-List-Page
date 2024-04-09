@@ -10,7 +10,7 @@ export default function Modal({product, closeModal}) {
                 <div className='item-info'>
                     <h2>{product.name}</h2>
                     <div style={{display: 'flex', justifyContent:'space-evenly'}}>
-                        <h4>{product.price}</h4>
+                        <h3>{`$${product.price}`}</h3>
                         <h4> {product.rating === null ? "Not Rated" : `${product.rating} / 5`}</h4>
                         
                     </div>

@@ -51,7 +51,7 @@ export default function Card() {
                             {/* set rating to print "not rated" if null */}
                             {item.rating === null ? "Not Rated" : `${item.rating} / 5`} 
                             </h4>
-                        <h4>{item.price}</h4>
+                        <h4>{`$${item.price}`}</h4>
                     </div>
                     <button className='viewBtn' onClick={() => handleOpenModal(item)}>Product Details</button>
                     {selectedProduct && selectedProduct.id === item.id && (
