@@ -7,9 +7,9 @@ function App() {
 
   return (
     <div>
+      {/* Filtering component woulld go here */}
       <nav>
         <h1>Maybelline: Face, Eye, and Lip</h1>
-        {/* Filtering component woulld go here */}
       </nav>
       
       <div className='card-div'>
