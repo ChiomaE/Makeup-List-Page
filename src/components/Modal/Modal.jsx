@@ -9,7 +9,7 @@ export default function Modal({product, closeModal}) {
                 <button className='closeBtn' onClick={() => closeModal(false)}>X</button>
                 <div>
                     <img className='modal-img' src={product.image_link} />
-                    <h4> {product.rating === null ? "Not Rated" : `Rating: ${product.rating} / 5`}</h4>
+                    <h3> {product.rating === null ? "Not Rated" : `Rating: ${product.rating} / 5`}</h3>
                 </div>
                 
                 <div className='item-info'>
