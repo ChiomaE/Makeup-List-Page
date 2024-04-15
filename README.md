@@ -9,6 +9,11 @@ This project is a makeup products showcase built with React. It retrieves data f
 - Users can click on the "Product Details" button on a card to view more information about the product in a modal.
 - The modal displays the product's image, name, rating, price, description, and a button to navigate to the product page.
 
+## Deployed Website
+The website is deployed using Netlify.
+
+Website Link: https://maybelline-product-page.netlify.app/
+
 ## Installation
 
 1. Clone the repository:
