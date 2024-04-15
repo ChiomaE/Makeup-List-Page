@@ -11,26 +11,28 @@ This project is a Maybelline product list page built with React. It retrieves da
 
 ## Installation
 
-1. Clone the repository:
+1. Create and navigate into target folder for repository
+
+2. Clone the repository:
 ```bash
 
 git clone https://github.com/ChiomaE/Makeup-List-Page
 
 ```
 
-2. Navigate into the project directory:
+3. Navigate into project folder "Makeup-List-Page":
 ```bash
 
-cd makeup-products-showcase
+cd Makeup-List-Page
 
 ```
 
-3. Install dependencies:
+4. Install dependencies:
 ```bash
 
 npm install
 ```
-4.  Run the development server:
+5.  Run the development server:
 ```bash
 
 npm run dev
