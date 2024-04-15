@@ -14,7 +14,7 @@ export default function Card() {
         async function fetchData () {
 
             try {
-                const res = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
+                const res = await axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
                 /* console.log(res.data); */
                 setProduct(res.data);
             } catch (error) {
